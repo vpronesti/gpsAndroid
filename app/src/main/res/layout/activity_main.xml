@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/gpsLatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/gpsLatitude"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gpsLongTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/gpsLongitude"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/latitudeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/latitude"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/gpsLatTextView"
+        app:layout_constraintEnd_toEndOf="@+id/gpsLatTextView"
+        app:layout_constraintStart_toStartOf="@+id/gpsLatTextView" />
+
+    <TextView
+        android:id="@+id/longitudeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/longitude"
+        app:layout_constraintBottom_toTopOf="@+id/gpsLongTextView"
+        app:layout_constraintEnd_toEndOf="@+id/gpsLongTextView"
+        app:layout_constraintStart_toStartOf="@+id/gpsLongTextView" />
+
+    <TextView
+        android:id="@+id/headerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/your_position"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/gpsLongTextView"
+        app:layout_constraintStart_toStartOf="@+id/gpsLatTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gpsStatusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/gps_status"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/gpsLongTextView"
+        app:layout_constraintStart_toStartOf="@+id/gpsLatTextView" />
+
+    <TextView
+        android:id="@+id/OnOffTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Off"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/gpsStatusTextView"
+        app:layout_constraintStart_toStartOf="@+id/gpsStatusTextView"
+        app:layout_constraintTop_toBottomOf="@+id/gpsStatusTextView" />
+
+    <TextView
+        android:id="@+id/gpsAccuracyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/accuracy"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gpsLatTextView"
+        app:layout_constraintEnd_toStartOf="@+id/gpsLongTextView"
+        app:layout_constraintStart_toEndOf="@+id/gpsLatTextView"
+        app:layout_constraintTop_toBottomOf="@+id/headerTextView" />
+
+    <TextView
+        android:id="@+id/accuracyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/accuracy"
+        app:layout_constraintBottom_toTopOf="@+id/gpsAccuracyTextView"
+        app:layout_constraintEnd_toEndOf="@+id/gpsAccuracyTextView"
+        app:layout_constraintStart_toStartOf="@+id/gpsAccuracyTextView" />
+
+    <TextView
+        android:id="@+id/altitudeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/altitude"
+        app:layout_constraintEnd_toEndOf="@+id/gpsAltitudeTextView"
+        app:layout_constraintStart_toStartOf="@+id/gpsAltitudeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/gpsLatTextView" />
+
+    <TextView
+        android:id="@+id/gpsAltitudeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/altitude"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/gpsLatTextView"
+        app:layout_constraintStart_toStartOf="@+id/gpsLatTextView"
+        app:layout_constraintTop_toBottomOf="@+id/altitudeTextView" />
+
+    <TextView
+        android:id="@+id/speedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/speed"
+        app:layout_constraintEnd_toEndOf="@+id/gpsSpeedTextView"
+        app:layout_constraintStart_toStartOf="@+id/gpsSpeedTextView"
+        app:layout_constraintTop_toBottomOf="@+id/gpsLongTextView" />
+
+    <TextView
+        android:id="@+id/gpsSpeedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/speed"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/gpsLongTextView"
+        app:layout_constraintStart_toStartOf="@+id/gpsLongTextView"
+        app:layout_constraintTop_toBottomOf="@+id/speedTextView" />
+
+</android.support.constraint.ConstraintLayout>

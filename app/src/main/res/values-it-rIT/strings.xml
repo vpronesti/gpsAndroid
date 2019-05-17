@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GPSApp</string>
+    <string name="gpsLatitude">Latitudine</string>
+    <string name="gpsLongitude">Longitudine</string>
+    <string name="latitude">Latitudine</string>
+    <string name="longitude">Longitudine</string>
+    <string name="your_position">La tua posizione</string>
+    <string name="On">Acceso</string>
+    <string name="permission_error">Errore di permesso</string>
+    <string name="permission_error_body">Senza il permesso di accedere al servizio GPS l\'app non può lavorare propriamente</string>
+    <string name="ok">OK</string>
+    <string name="gps_error">Errore GPS</string>
+    <string name="gps_error_body">Il GPS è spento, per cui l\'app non può tracciare la tua posizione. Per favore accendilo</string>
+    <string name="cancel">Cancella</string>
+    <string name="turn_on">Accendi</string>
+    <string name="gps_Sensors">Sensore GPS</string>
+    <string name="gps_sensors_body">Sul tuo dispositivo non è presente un sensore GPS</string>
+    <string name="grant_permission">Garantisci il permesso</string>
+    <string name="Unavailable">Non\nDisponibile</string>
+    <string name="gps_status">Stato del GPS:</string>
+    <string name="Off">Spento</string>
+    <string name="accuracy">Accuratezza</string>
+    <string name="altitude">Altitudine</string>
+    <string name="speed">Velocità</string>
+</resources>

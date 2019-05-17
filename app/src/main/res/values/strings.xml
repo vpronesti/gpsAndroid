@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">GPSApp</string>
+    <string name="gpsLatitude">Latitude</string>
+    <string name="gpsLongitude">Longitude</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="your_position">Your position</string>
+    <string name="On">On</string>
+    <string name="permission_error">Permission error</string>
+    <string name="permission_error_body">Without the permission to access the GPS service the app is unable to work properly</string>
+    <string name="ok">OK</string>
+    <string name="gps_error">GPS error</string>
+    <string name="gps_error_body">The GPS is turned off, so the app can\'t track your position. Please turn it on</string>
+    <string name="cancel">Cancel</string>
+    <string name="turn_on">Turn On</string>
+    <string name="gps_Sensors">GPS sensor</string>
+    <string name="gps_sensors_body">On your device there isn\'t a GPS sensor</string>
+    <string name="grant_permission">Grant permission</string>
+    <string name="Unavailable">Unavailable</string>
+    <string name="gps_status">GPS status:</string>
+    <string name="Off">Off</string>
+    <string name="accuracy">Accuracy</string>
+    <string name="altitude">Altitude</string>
+    <string name="speed">Speed</string>
+</resources>
